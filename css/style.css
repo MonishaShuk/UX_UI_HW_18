@@ -36,7 +36,7 @@ ul{list-style: none;
     justify-content: flex-end;
     /*justify-content: flex-end;
     align-items: center;*/
-    color:  #124851
+    color:#fff;
     font-size: 18px;
     font-weight: 600;
    
@@ -54,8 +54,8 @@ ul{list-style: none;
 .nav_link_active{
     display: inline-block;
     padding: 10px 20px;
-    color: #Fff;
-    border:2px solid  #124851;
+    color: #fff;
+    /*border:2px solid  #124851;*/
     background-color: #124851;
     text-decoration: none;
     }
@@ -68,19 +68,24 @@ a:visited {
   
   /* mouse over link */
   a:hover {
-    color:#124851;
+    color:#4DB1B7;
     text-decoration: none;
   }
   
   /* selected link */
-  a:active {
-    color:#124851;
-    text-decoration: none;
+  a.active {
+    color:#ffffff;
+   
    
   }
 
+  a:link{
+    color:#fff;
+    text-decoration: none;
+    
+  }
     /*class for toggle button*/
-    .toggle-btn{
+    .toggle-btn{ text-decoration: none;
         width:35px;
         position:absolute;
         right: 80px;
@@ -594,7 +599,9 @@ font-weight: 600;
     .work{
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        padding-top: 40px;
+        padding-top: 20px;
+        padding-right: 24px;
+     
     }
     .hello{
         font-size:60px;
