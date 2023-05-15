@@ -23,9 +23,11 @@ header {
 
 /*navigation Link -*/
 
+
+
 .nav_item{
   
-    padding: 20px;
+    padding-top: 20px;
     vertical-align:middle;
     justify-content: flex-end;
     /*justify-content: flex-end;
@@ -36,7 +38,9 @@ header {
 
 .nav_link{
     display: inline-block;
-    padding: 10px 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+  
     
 }
 
@@ -49,6 +53,7 @@ header {
     text-decoration: none;
     }
 
+ 
     .dropdown_menu{
         display: none;
         position: absolute;
@@ -138,11 +143,10 @@ height:240px;
  /*class for Hero Section*/
 .herosection{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height:760px;
+    height:780px;
     background-color: #eff2f5;
    /* background-color: #f1f1f1;*/
     padding:3% 20% 2% 20%;
- 
     text-align: left;
     line-height: 1.25;
     color: #333333;
@@ -160,51 +164,44 @@ height:240px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height:320px;
     color: #333333;
-    background-color:#tr;
+    background-color:#eff2f5;
     padding-left:20%;
     padding-right:20%;
     padding-top: 40px;
     padding-bottom: 40px;
     display:flex;
+    flex-wrap: wrap;
+   
 }
+
 .about_profile{
     flex-basis:30%;
-    flex-shrink:0;
-    overflow:hidden;
-    /*position: relative;*/
     text-align: center;
     padding-top: 20px;
-  
-    
 }
 
 .about_details{
-    display: block;
+  padding-bottom: 10px;
     flex-basis:60%;
     font-size: 20px; 
     line-height: 1.5em;
-
 }
 
 .img_profile{
     width: 260px;
     height: 260px;
-    position: relative;
 }
 
 .work{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 140px;
-  
-
 }
-.para{
 
+.para{
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 24px; 
-   
 }
 
 .para_about{
@@ -233,8 +230,6 @@ height:240px;
     "grid-item_3";
     padding: 5% 20% 5% 20%;
     height:100%;
- 
-  
 }
 
 .grid-item_1{
@@ -263,10 +258,6 @@ height:240px;
     grid-template-areas: 
     "grid_case2 nested"
     ;
-    /*grid-area: grid-item_2;
-    grid-row: 2;
-*/
-
 
 }
 
@@ -278,26 +269,21 @@ height:240px;
     grid-template-areas: 
     "grid_case3 nested"
     ;
-   /* grid-area: grid-item_1;
-    grid-row-end: 3;*/
+
 }
 .grid-item {
 
     padding: 60px;
     text-align: center;
-   
-  
 }
 
 .nested{
     display:grid;
     background-color:#fff;
     font-family: Arial, Helvetica, sans-serif;
- 
     grid-template-rows: repeat(4, auto);
     font-size: 18px;
     text-align: left;
-   
 }
 
 
@@ -326,13 +312,12 @@ height:240px;
 }
 
 .grid_case3{
-    background-color: #959595;
-    border:1px solid #959595;
+    background-color: #C8C9CB;
+    border:1px solid #C8C9CB;
     background-image: url("../img/img_case3.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size:46%;
-  
     border-radius: 0px 0px 0px 18px;
 }
 .nested{
@@ -348,7 +333,6 @@ height:240px;
 
 .casestudy1{
     border:3px solid #89b576;
-   
 }
 
 .casestudy2{
@@ -356,7 +340,7 @@ height:240px;
 }
 
 .casestudy3{
-    border:3px solid #959595;
+    border:3px solid #C8C9CB;
 }
 
 /*
@@ -372,9 +356,8 @@ height:240px;
 
 /*button Styles*/
 .left_button{
-   align-items: center;
-    
-    margin-top: 10px;
+    align-items: center;
+    margin-top:20px;
 
    
 }
@@ -384,7 +367,6 @@ height:240px;
 }
 
 button {
-   
     font-size: 18px;
     padding: 15px;
     font-weight: 600;
@@ -393,8 +375,6 @@ button {
     font-family:Arial, Helvetica, sans-serif;
     border: #124851;
     border-radius: 4px 4px 4px 4px;
-
-   
 }
 
 .btn_Study1{
@@ -403,7 +383,6 @@ button {
     background-color: #6ba055;
     border-radius: 4px 4px 4px 4px;
     color:#fff;
-  
 }
 
 .btn_Study2{
@@ -438,10 +417,7 @@ footer{
 }
 
 .footer{
-   
-    vertical-align: bottom;
- 
-    
+   vertical-align: bottom; 
 }
 .footer_name {
     font-family:Arial, Helvetica, sans-serif;
@@ -452,18 +428,18 @@ footer{
     height: 40px;
     vertical-align: middle;
     padding-right: 10px; 
-
 }
+
 .footer_copyright{
     font-size: 12px;
     color: #fff;
     font-weight: 100;
     line-height: 20px;
 }
+
 .footer_text{
     display: flex;
     flex-direction: column;  
- 
 }
 
 .footer_details{
@@ -480,21 +456,18 @@ font-weight: 600;
 }
 .right{
     display: flex;
-    flex-direction: column;  
-    
+    flex-direction: column;   
 }
 .para_details{
     padding-left: 20px;
     color: #f1f1f1;
     font-size: 14px;
     line-height: 26px;
-
 }
-.footer_contact
-{
+
+.footer_contact{
     font-size: 14px;
     color: #ffffff;
-  
 }
 
 .footer_contact_details{
@@ -506,8 +479,10 @@ font-weight: 600;
 
 
   /*Section Class for Skills*/
-  .mySkills
-  {
+  
+  .mySkills{
+    display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     color: #000;
@@ -518,8 +493,8 @@ font-weight: 600;
   
 .skill_Container{
     display:flex;
+    flex-wrap: wrap;
     flex-grow:1;
-    height:300px;
     width:100%;
     justify-content: center;
     font-family:Arial, Helvetica, sans-serif;
@@ -527,11 +502,8 @@ font-weight: 600;
 }
 
 .skill_Container .skill_preview{
-    display: inline;
     flex-basis:20%;
     flex-shrink:0;
-    overflow:hidden;
-    position: relative;
     text-align: center;
     justify-content: center;
     background-color: #DFF6F8;
@@ -542,6 +514,7 @@ font-weight: 600;
 
 .tool_Container{
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 63%;
@@ -562,6 +535,35 @@ font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {
+   
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
     .nav_link{
       display: none;
     }
@@ -644,6 +646,8 @@ font-weight: 600;
     }
     .herosection_About{
         height:900px;
+        padding-left:10%;
+        padding-right:10%;
     }
     .work{
         font-size: 20px;
@@ -667,21 +671,32 @@ font-weight: 600;
 }
 .skill_Container .skill_preview{
    
-    flex-basis:30%;
-    position: relative;}
+    flex-basis:80%;
+ margin-bottom: 20px;
+    }
 
-    .skill_preview{
-  
-    flex-basis:30%;
-    position: relative;}
+    .about_details{
+        margin-top: 60px;
+          flex-basis:100%;
+          height: auto;
+        }
+        .skill_details{
+         
+            justify-content:center;}
 
     .tool_Container{
         display:flex;
-        width: 90%;
-        margin-left:5%;
-        margin-right: 5%;}
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto;
+        margin-left:12%;
+   }
+
 .img_profile{
-    display: flex;
-    position: relative;
-  
+    flex-direction:row;
+    align-items: center;
+    width: 260px;
+    height: 260px;
+}
+
 }
