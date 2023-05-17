@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Monisha Portfolio</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
+
 <body>
     <header >
-      <div class="toggle-btn"> 
+      <div id="toggle_menu" class="toggle-btn" > 
             <span></span>
             <span></span>
             <span></span>
         </div>
-    
+        <div id="menu_close"class="toggle-btn" > 
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
       
         <div class="logo">
             <div><img src="img/MS_Logo.svg"></div>
         </div>
-    <nav class="nav_item">
         
+    <nav class="nav_item">
          <ul>
             <li class="nav_link_active"><a href="#">Work</a></li>
             <li class="nav_link" ><a href="AboutMe.html">About</a></li>
@@ -30,7 +34,14 @@
          </ul>
     </nav>
     </header>
-  
+  <div id="menu_id"class="menu">
+    <ul>
+        <li ><a href="#">Work</a></li>
+        <li ><a href="AboutMe.html">About</a></li>
+        <li ><a href="">Contact</a></li>
+        <li ><a href="">Resume</a></li>
+     </ul>
+  </div>
     <div class="herosection">
         <p class="hello"> Hello!</p>
         <p class="hello" > I'm Monisha Shukla</p>
@@ -105,5 +116,8 @@
     </div>
     
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
